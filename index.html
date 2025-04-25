@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -25,7 +26,8 @@
 
 <!-- HERO -->
 <section id="home" class="hero">
-    <div class="container hero-content">
+    <div class="avatar-container">
+        <!-- Foto personalizada -->
         <img class="avatar" src="src/images/img2.jpg" alt="Foto de Andrés LapSol">
         <h1>Hola, soy <span>Andrés Lapuente Sola</span></h1>
         <p>Estudiante de DAM & desarrollador en formación</p>
@@ -40,10 +42,11 @@
         <div class="about-grid">
             <div class="about-text">
                 <p>Soy estudiante de Desarrollo de Aplicaciones Multiplataforma (DAM), enfocado en mi crecimiento profesional. Busco iniciarme en el mundo laboral y aportar valor mediante soluciones web eficientes y accesibles.</p>
-                <p>Actualmente continúo aprendiendo nuevas tecnologías y metodologías de desarrollo. ¡Consulta mi CV para más detalles!</p>
+                <p>Actualmente continúo aprendiendo nuevas tecnologías y metodologías de desarrollo. <a href="assets/CV_Andres_Lapuente.pdf" download="CV_Andres_Lapuente.pdf">Descarga mi CV</a> para más detalles.</p>
             </div>
             <div class="about-img">
-                <img src="https://avatars.githubusercontent.com/u/182759982?v=4" alt="Avatar Andrés LapSol">
+                <!-- Mismo cambio de imagen -->
+                <img src="src/images/img2.jpg" alt="Avatar Andrés LapSol">
             </div>
         </div>
     </div>
@@ -72,18 +75,15 @@
         <h2>Proyectos Destacados</h2>
         <div class="projects-grid">
             <!-- Proyecto 1 -->
-            <div class="project-card">
-                <img src="https://via.placeholder.com/400x250" alt="andreslapsol.github.io">
+            <div class="project-card" style="background-image: url('src/images/street_rps.png')">
                 <div class="card-content">
-                    <h3>Portfolio Personal</h3>
-                    <p>Mi sitio web personal desplegado con GitHub Pages y HTML/CSS.</p>
-                    <a href="https://andreslapsol.github.io" target="_blank" class="btn small">Visitar</a>
-                    <a href="https://github.com/AndresLapSol/andreslapsol.github.io" target="_blank" class="btn small">Código</a>
+                    <h3>Street Rps</h3>
+                    <p>El clasico juego de piedra, papel y tijeras pero con un toque más "callejero"</p>
+                    <a href="https://github.com/AndresLapSol/Street_RPS" target="_blank" class="btn small">Código</a>
                 </div>
             </div>
             <!-- Proyecto 2 -->
-            <div class="project-card">
-                <img src="https://via.placeholder.com/400x250" alt="proyect_hibernate_mysql">
+            <div class="project-card" style="background-image: url('src/images/hibernat_mysql.png')">
                 <div class="card-content">
                     <h3>Hibernate + MySQL</h3>
                     <p>Integración de Hibernate con MySQL para persistencia de datos en Java.</p>
@@ -91,17 +91,15 @@
                 </div>
             </div>
             <!-- Proyecto 3 -->
-            <div class="project-card">
-                <img src="https://via.placeholder.com/400x250" alt="proyectoBiblioteca">
-                <div class="card-content">
+            <div class="project-card" style="background-image: url('src/images/library_project.png')">
+                <div class="card-content" >
                     <h3>Sistema Biblioteca</h3>
                     <p>Aplicación en Java para gestión de bibliotecas con CRUD completo.</p>
                     <a href="https://github.com/AndresLapSol/proyectoBiblioteca" target="_blank" class="btn small">Código</a>
                 </div>
             </div>
             <!-- Proyecto 4 -->
-            <div class="project-card">
-                <img src="https://via.placeholder.com/400x250" alt="mobileGame">
+            <div class="project-card" style="background-image: url('src/images/arcade.png')">
                 <div class="card-content">
                     <h3>Mobile Game</h3>
                     <p>Juego móvil desarrollado en Java, diseño de niveles y lógica de juego.</p>
@@ -119,12 +117,12 @@
             <h2>Contacto</h2>
             <p>¿Interesado en colaborar o tienes alguna consulta? ¡Escríbeme!</p>
             <ul>
-                <li>Email: <a href="mailto:andres@example.com">andres@example.com</a></li>
-                <li>LinkedIn: <a href="#">linkedin.com/in/andreslapsol</a></li>
+                <li>Email: <a href="mailto:andreslapsol@gmail.com">andreslapsol@gmail.com</a></li>
+                <li>LinkedIn: <a href="https://www.linkedin.com/in/andr%C3%A9s-lapuente-sola-604372277/">linkedin.com/in/andreslapsol</a></li>
                 <li>Instagram: <a href="#">@andreslapsol</a></li>
             </ul>
         </div>
-        <form class="contact-form">
+        <form class="contact-form" action="https://formspree.io/f/xpwdwzbk" method="POST">
             <input type="text" name="name" placeholder="Tu nombre" required>
             <input type="email" name="email" placeholder="Tu email" required>
             <textarea name="message" rows="5" placeholder="Tu mensaje" required></textarea>

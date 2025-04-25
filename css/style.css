@@ -31,7 +31,17 @@ img { max-width: 100%; display: block; }
 /* Hero */
 .hero { height: 100vh; background: linear-gradient(135deg, var(--primary), var(--secondary)); color: white; display: flex; align-items: center; justify-content: center; text-align: center; }
 .hero-content { max-width: 600px; }
-.avatar { border-radius: 50%; width: 150px; margin-bottom: 1rem; border: 5px solid white; }
+.avatar { display: block;
+    margin: 0 auto 1rem; /* arriba 0, izq/dch auto, abajo 1rem */
+    width: 150px;
+    border-radius: 50%;
+    border: 5px solid white;
+
+    /* estas dos líneas hacen el “crop” centrado */
+    object-fit: cover;
+    object-position: center;
+
+}
 .hero h1 { font-size: 3rem; margin-bottom: 0.5rem; }
 .hero h1 span { color: var(--light); }
 .hero p { font-size: 1.2rem; margin-bottom: 1.5rem; }
@@ -55,10 +65,27 @@ h2 { text-align: center; font-size: 2.5rem; margin-bottom: 2rem; color: var(--da
 
 /* Projects */
 .projects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; }
-.project-card { background: white; border-radius: 1rem; box-shadow: 0 4px 6px rgba(0,0,0,0.1); overflow: hidden; transition: transform 0.3s; }
-.project-card:hover { transform: translateY(-10px); }
-.card-content { padding: 1rem; }
-.card-content h3 { margin-bottom: 0.5rem; }
+.project-card {
+    position: relative;               /* para posicionar el contenido */
+    height: 200px;                    /* ajusta a tu gusto: 180–250px suele ir bien */
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    background-size: cover;           /* cubre todo el contenedor */
+    background-position: center;      /* centra el foco de la imagen */
+    transition: transform 0.3s;
+}
+.project-card:hover {
+    transform: translateY(-10px);
+}
+.card-content {
+    padding: 1rem;
+    color: blanchedalmond;
+}
+.card-content h3 {
+    margin-bottom: 0.5rem;
+    color: #d1d5db;
+}
 
 /* Contact */
 .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; }
