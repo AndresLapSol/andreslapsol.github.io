@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | Andrés Lapuente Sola</title>
+    <title data-es="Portfolio | Andrés Lapuente Sola" data-en="Portfolio | Andrés Lapuente Sola">Portfolio | Andrés Lapuente Sola</title>
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
@@ -11,13 +11,17 @@
 <!-- NAVBAR -->
 <nav class="navbar">
     <div class="container nav-container">
-        <a href="#home" class="brand">Andrés Lapuente Sola</a>
+        <a href="#home" class="brand" data-es="Andrés Lapuente Sola" data-en="Andrés Lapuente Sola">Andrés Lapuente Sola</a>
         <ul class="nav-links">
-            <li><a href="#about">Sobre mí</a></li>
-            <li><a href="#tech">Stack</a></li>
-            <li><a href="#projects">Proyectos</a></li>
-            <li><a href="#contact">Contacto</a></li>
+            <li><a href="#about" data-es="Sobre mí" data-en="About me">Sobre mí</a></li>
+            <li><a href="#tech" data-es="Stack" data-en="Tech Stack">Stack</a></li>
+            <li><a href="#projects" data-es="Proyectos" data-en="Projects">Proyectos</a></li>
+            <li><a href="#contact" data-es="Contacto" data-en="Contact">Contacto</a></li>
         </ul>
+        <select id="language-switch">
+            <option value="es">Español</option>
+            <option value="en">English</option>
+        </select>
         <button class="nav-toggle" aria-label="toggle navigation">
             <span class="hamburger"></span>
         </button>
@@ -27,25 +31,23 @@
 <!-- HERO -->
 <section id="home" class="hero">
     <div class="avatar-container">
-        <!-- Foto personalizada -->
         <img class="avatar" src="https://github.com/AndresLapSol.png" alt="Foto de Andrés LapSol">
-        <h1>Hola, soy <span>Andrés Lapuente Sola</span></h1>
-        <p>Desarrollador Junior FullStack</p>
-        <a href="#projects" class="btn">Ver Proyectos</a>
+        <h1 data-es="Hola, soy Andrés Lapuente Sola" data-en="Hi, I'm Andrés Lapuente Sola">Hola, soy Andrés Lapuente Sola</h1>
+        <p data-es="Desarrollador Junior FullStack" data-en="Junior FullStack Developer">Desarrollador Junior FullStack</p>
+        <a href="#projects" class="btn" data-es="Ver Proyectos" data-en="See Projects">Ver Proyectos</a>
     </div>
 </section>
 
 <!-- ABOUT -->
 <section id="about" class="about">
     <div class="container">
-        <h2>Sobre mí</h2>
+        <h2 data-es="Sobre mí" data-en="About me">Sobre mí</h2>
         <div class="about-grid">
             <div class="about-text">
-                <p>Soy Desarrollador Junior, enfocado en mi crecimiento profesional. Busco iniciarme en el mundo laboral y aportar valor mediante soluciones web eficientes y accesibles.</p>
-                <p>Actualmente continúo aprendiendo nuevas tecnologías y metodologías de desarrollo. <a href="assets/CV_Andres_Lapuente.pdf" download="CV_Andres_Lapuente.pdf">Descarga mi CV</a> para más detalles.</p>
+                <p data-es="Soy Desarrollador Junior, enfocado en mi crecimiento profesional. Busco iniciarme en el mundo laboral y aportar valor mediante soluciones web eficientes y accesibles." data-en="I am a Junior Developer focused on professional growth. I am looking to start my career and bring value through efficient and accessible web solutions.">Soy Desarrollador Junior, enfocado en mi crecimiento profesional. Busco iniciarme en el mundo laboral y aportar valor mediante soluciones web eficientes y accesibles.</p>
+                <p data-es="Actualmente continúo aprendiendo nuevas tecnologías y metodologías de desarrollo. " data-en="I am currently learning new technologies and development methodologies. ">Actualmente continúo aprendiendo nuevas tecnologías y metodologías de desarrollo. <a href="assets/CV_Andres_Lapuente.pdf" download="CV_Andres_Lapuente.pdf" data-es="Descarga mi CV" data-en="Download my CV">Descarga mi CV</a> para más detalles.</p>
             </div>
             <div class="about-img">
-                <!-- Mismo cambio de imagen -->
                 <img src="src/images/foto2.jpg" alt="Avatar Andrés LapSol">
             </div>
         </div>
@@ -55,7 +57,7 @@
 <!-- TECH STACK -->
 <section id="tech" class="tech">
     <div class="container">
-        <h2>Stack Tecnológico</h2>
+        <h2 data-es="Stack Tecnológico" data-en="Tech Stack">Stack Tecnológico</h2>
         <div class="tech-grid">
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5">
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3">
@@ -72,38 +74,38 @@
 <!-- PROJECTS -->
 <section id="projects" class="projects">
     <div class="container">
-        <h2>Proyectos Destacados</h2>
+        <h2 data-es="Proyectos Destacados" data-en="Featured Projects">Proyectos Destacados</h2>
         <div class="projects-grid">
             <!-- Proyecto 1 -->
             <div class="project-card" style="background-image: url('src/images/street_rps.png')">
                 <div class="card-content">
-                    <h3>Street Rps</h3>
-                    <p>El clasico juego de piedra, papel y tijeras pero con un toque más "callejero"</p>
-                    <a href="https://github.com/AndresLapSol/Street_RPS" target="_blank" class="btn small">Código</a>
+                    <h3 data-es="Street Rps" data-en="Street Rps">Street Rps</h3>
+                    <p data-es="El clasico juego de piedra, papel y tijeras pero con un toque más 'callejero'" data-en="The classic rock, paper, scissors game with a street twist">El clasico juego de piedra, papel y tijeras pero con un toque más "callejero"</p>
+                    <a href="https://github.com/AndresLapSol/Street_RPS" target="_blank" class="btn small" data-es="Código" data-en="Code">Código</a>
                 </div>
             </div>
             <!-- Proyecto 2 -->
             <div class="project-card" style="background-image: url('src/images/hibernat_mysql.png')">
                 <div class="card-content">
                     <h3>Hibernate + MySQL</h3>
-                    <p>Integración de Hibernate con MySQL para persistencia de datos en Java.</p>
-                    <a href="https://github.com/AndresLapSol/proyect_hibernate_mysql" target="_blank" class="btn small">Código</a>
+                    <p data-es="Integración de Hibernate con MySQL para persistencia de datos en Java." data-en="Hibernate integration with MySQL for data persistence in Java.">Integración de Hibernate con MySQL para persistencia de datos en Java.</p>
+                    <a href="https://github.com/AndresLapSol/proyect_hibernate_mysql" target="_blank" class="btn small" data-es="Código" data-en="Code">Código</a>
                 </div>
             </div>
             <!-- Proyecto 3 -->
             <div class="project-card" style="background-image: url('src/images/library_project.png')">
                 <div class="card-content" >
-                    <h3>Sistema Biblioteca</h3>
-                    <p>Aplicación en Java para gestión de bibliotecas con CRUD completo.</p>
-                    <a href="https://github.com/AndresLapSol/proyectoBiblioteca" target="_blank" class="btn small">Código</a>
+                    <h3 data-es="Sistema Biblioteca" data-en="Library System">Sistema Biblioteca</h3>
+                    <p data-es="Aplicación en Java para gestión de bibliotecas con CRUD completo." data-en="Java application for library management with full CRUD.">Aplicación en Java para gestión de bibliotecas con CRUD completo.</p>
+                    <a href="https://github.com/AndresLapSol/proyectoBiblioteca" target="_blank" class="btn small" data-es="Código" data-en="Code">Código</a>
                 </div>
             </div>
             <!-- Proyecto 4 -->
             <div class="project-card" style="background-image: url('src/images/arcade.png')">
                 <div class="card-content">
                     <h3>Mobile Game</h3>
-                    <p>Juego móvil desarrollado en Java, diseño de niveles y lógica de juego.</p>
-                    <a href="https://github.com/AndresLapSol/mobileGame" target="_blank" class="btn small">Código</a>
+                    <p data-es="Juego móvil desarrollado en Java, diseño de niveles y lógica de juego." data-en="Mobile game developed in Java, featuring level design and game logic.">Juego móvil desarrollado en Java, diseño de niveles y lógica de juego.</p>
+                    <a href="https://github.com/AndresLapSol/mobileGame" target="_blank" class="btn small" data-es="Código" data-en="Code">Código</a>
                 </div>
             </div>
         </div>
@@ -114,18 +116,18 @@
 <section id="contact" class="contact">
     <div class="container contact-grid">
         <div class="contact-info">
-            <h2>Contacto</h2>
-            <p>¿Interesado en colaborar o tienes alguna consulta? ¡Escríbeme!</p>
+            <h2 data-es="Contacto" data-en="Contact">Contacto</h2>
+            <p data-es="¿Interesado en colaborar o tienes alguna consulta? ¡Escríbeme!" data-en="Interested in collaborating or have any questions? Feel free to write to me!">¿Interesado en colaborar o tienes alguna consulta? ¡Escríbeme!</p>
             <ul>
-                <li>Email: <a href="#">andreslapsol@gmail.com</a></li>
-                <li>LinkedIn: <a href="https://www.linkedin.com/in/andr%C3%A9s-lapuente-sola-604372277/">linkedin.com/in/andreslapsol</a></li>
+                <li data-es="Email:" data-en="Email:">Email: <a href="#">andreslapsol@gmail.com</a></li>
+                <li data-es="LinkedIn:" data-en="LinkedIn:">LinkedIn: <a href="https://www.linkedin.com/in/andr%C3%A9s-lapuente-sola-604372277/">linkedin.com/in/andreslapsol</a></li>
             </ul>
         </div>
         <form class="contact-form" action="https://formspree.io/f/xpwdwzbk" method="POST">
-            <input type="text" name="name" placeholder="Tu nombre" required>
-            <input type="email" name="email" placeholder="Tu email" required>
-            <textarea name="message" rows="5" placeholder="Tu mensaje" required></textarea>
-            <button type="submit" class="btn">Enviar</button>
+            <input type="text" name="name" placeholder="Tu nombre" required data-es="Tu nombre" data-en="Your name">
+            <input type="email" name="email" placeholder="Tu email" required data-es="Tu email" data-en="Your email">
+            <textarea name="message" rows="5" placeholder="Tu mensaje" required data-es="Tu mensaje" data-en="Your message"></textarea>
+            <button type="submit" class="btn" data-es="Enviar" data-en="Send">Enviar</button>
         </form>
     </div>
 </section>
@@ -133,7 +135,7 @@
 <!-- FOOTER -->
 <footer class="footer">
     <div class="container">
-        <p>&copy; 2025 Andrés LapSol · <a href="https://github.com/AndresLapSol" target="_blank">GitHub</a></p>
+        <p data-es="&copy; 2025 Andrés LapSol · " data-en="&copy; 2025 Andrés LapSol · ">&copy; 2025 Andrés LapSol · <a href="https://github.com/AndresLapSol" target="_blank">GitHub</a></p>
     </div>
 </footer>
 
@@ -144,6 +146,22 @@
     toggle.addEventListener('click', () => {
         links.classList.toggle('nav-active');
     });
+
+    // Language switcher code
+    function setLanguage(lang) {
+        document.querySelectorAll('[data-es][data-en]').forEach(el => {
+            el.textContent = el.getAttribute('data-' + lang);
+            // Special case: placeholders in input & textarea
+            if (el.placeholder !== undefined && el.getAttribute('data-' + lang)) {
+                el.placeholder = el.getAttribute('data-' + lang);
+            }
+        });
+    }
+    const select = document.getElementById('language-switch');
+    select.addEventListener('change', function(e) {
+        setLanguage(e.target.value);
+    });
+    setLanguage('es');
 </script>
 </body>
 </html>
