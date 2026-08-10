@@ -3,184 +3,498 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title data-es="Portfolio | Andrés Lapuente Sola" data-en="Portfolio | Andrés Lapuente Sola">Portfolio | Andrés Lapuente Sola</title>
+    <meta name="description" content="Andrés Lapuente Sola — Data Analyst/Engineer en formación · Big Data e IA · Desarrollador." data-es="Andrés Lapuente Sola — Data Analyst/Engineer en formación · Big Data e IA · Desarrollador." data-en="Andrés Lapuente Sola — Data Analyst/Engineer in training · Big Data & AI · Developer." />
+    <title data-es="Andrés Lapuente Sola · Data Analyst/Engineer en formación" data-en="Andrés Lapuente Sola · Data Analyst/Engineer in training">Andrés Lapuente Sola · Data Analyst/Engineer en formación</title>
+
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2307060b'/%3E%3Ctext x='32' y='42' font-family='Georgia,serif' font-size='28' fill='%239b6bff' text-anchor='middle'%3EAL%3C/text%3E%3C/svg%3E" />
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css" />
-    <!-- Tipografía -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet" />
+    <!-- Tipografía: Fraunces (display, editorial) + Montserrat (texto) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 </head>
 <body>
 <!-- NAVBAR -->
 <nav class="navbar">
     <div class="container nav-container">
-        <a href="#home" class="brand" data-es="Andrés Lapuente Sola" data-en="Andrés Lapuente Sola">Andrés Lapuente Sola</a>
+        <a href="#home" class="brand">
+            <span class="brand-mark">AL</span>
+            <span class="brand-name" data-es="Andrés Lapuente Sola" data-en="Andrés Lapuente Sola">Andrés Lapuente Sola</span>
+        </a>
         <ul class="nav-links">
-            <li><a href="#about" data-es="Sobre mí" data-en="About me">Sobre mí</a></li>
-            <li><a href="#tech" data-es="Stack" data-en="Tech Stack">Stack</a></li>
+            <li><a href="#about" data-es="Sobre mí" data-en="About">Sobre mí</a></li>
+            <li><a href="#experience" data-es="Experiencia" data-en="Experience">Experiencia</a></li>
+            <li><a href="#skills" data-es="Habilidades" data-en="Skills">Habilidades</a></li>
             <li><a href="#projects" data-es="Proyectos" data-en="Projects">Proyectos</a></li>
             <li><a href="#contact" data-es="Contacto" data-en="Contact">Contacto</a></li>
         </ul>
 
-        <!-- Language switcher (bonito) -->
-        <div class="lang-switch" role="tablist" aria-label="Seleccionar idioma / Choose language">
-            <!-- Hidden native select (progressive enhancement) -->
-            <select id="language-switch" aria-hidden="true" tabindex="-1" style="position:absolute;left:-9999px;">
-                <option value="es">Español</option>
-                <option value="en">English</option>
-            </select>
+        <div class="nav-actions">
+            <a href="assets/CV_Andres_Lapuente_ES.pdf?v=20260810" download class="btn outline small nav-cv"
+               data-es="Descargar CV" data-en="Download CV">Descargar CV</a>
 
-            <button class="lang-btn" role="tab" aria-selected="false" data-lang="es" title="Español">
-                <span class="flag" aria-hidden="true">🇪🇸</span>
-                <span class="lang-label">ES</span>
-            </button>
+            <!-- Language switcher -->
+            <div class="lang-switch" role="tablist" aria-label="Seleccionar idioma / Choose language">
+                <select id="language-switch" aria-hidden="true" tabindex="-1" style="position:absolute;left:-9999px;">
+                    <option value="es">Español</option>
+                    <option value="en">English</option>
+                </select>
+                <button class="lang-btn" role="tab" aria-selected="false" data-lang="es" title="Español">ES</button>
+                <button class="lang-btn" role="tab" aria-selected="false" data-lang="en" title="English">EN</button>
+            </div>
 
-            <button class="lang-btn active" role="tab" aria-selected="true" data-lang="en" title="English">
-                <span class="flag" aria-hidden="true">🇬🇧</span>
-                <span class="lang-label">EN</span>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
             </button>
         </div>
-
-        <button class="nav-toggle" aria-label="toggle navigation">
-            <span class="hamburger"></span>
-        </button>
     </div>
 </nav>
 
 <!-- HERO -->
 <section id="home" class="hero">
-    <div class="avatar-container">
-        <img class="avatar" src="https://github.com/AndresLapSol.png" alt="Foto de Andrés LapSol" />
-        <h1 data-es="Hola, soy Andrés Lapuente Sola" data-en="Hi, I'm Andrés Lapuente Sola">Hola, soy Andrés Lapuente Sola</h1>
+    <div class="container hero-grid">
+        <div class="hero-copy">
+            <p class="eyebrow">
+                <span class="status-dot" aria-hidden="true"></span>
+                <span data-es="Disponible para nuevas oportunidades" data-en="Open to new opportunities">Disponible para nuevas oportunidades</span>
+            </p>
 
-        <!-- LOOPING TEXT -->
-        <div class="text-loop" aria-hidden="false">
-            <span class="intro" data-es="Soy" data-en="I'm">Soy</span>
+            <h1>
+                <span data-es="Andrés Lapuente Sola" data-en="Andrés Lapuente Sola">Andrés Lapuente Sola</span>
+            </h1>
+            <p class="hero-role"
+               data-es="Data Analyst/Engineer en formación | Big Data e IA | Desarrollador"
+               data-en="Data Analyst/Engineer in training | Big Data &amp; AI | Developer">
+                Data Analyst/Engineer en formación | Big Data e IA | Desarrollador
+            </p>
 
-            <!-- .loop contiene .loop-track con spans; el JS transformará cada span a .loop-item y duplicará -->
-            <div class="loop" role="presentation" aria-hidden="true">
-                <div class="loop-track" id="loop-track">
-                    <span data-es="Programador" data-en="Programmer">Programador</span>
-                    <span data-es="Desarrollador" data-en="Developer">Desarrollador</span>
-                    <span data-es="Tester" data-en="QA Tester">Tester</span>
-                </div>
+            <p class="hero-lead"
+               data-es="En transición hacia Data Analytics/Engineering: cursando la Especialización en Inteligencia Artificial y Big Data (IES Gran Capitán, Córdoba). Vengo de un perfil de desarrollo backend — PHP, Java, MySQL — que hoy aplico a construir y entender sistemas de datos."
+               data-en="Moving into Data Analytics/Engineering: currently completing a Specialization in Artificial Intelligence &amp; Big Data (IES Gran Capitán, Córdoba). I come from a backend development background — PHP, Java, MySQL — that I now apply to building and understanding data systems.">
+                En transición hacia Data Analytics/Engineering: cursando la Especialización en Inteligencia Artificial y Big Data (IES Gran Capitán, Córdoba). Vengo de un perfil de desarrollo backend — PHP, Java, MySQL — que hoy aplico a construir y entender sistemas de datos.
+            </p>
+
+            <div class="hero-actions">
+                <a href="#projects" class="btn primary" data-es="Ver proyectos" data-en="View projects">Ver proyectos</a>
+                <a href="#contact" class="btn outline" data-es="Contactar" data-en="Get in touch">Contactar</a>
+            </div>
+
+            <div class="hero-meta">
+                <span data-es="📍 Córdoba, España" data-en="📍 Córdoba, Spain">📍 Córdoba, España</span>
+                <span aria-hidden="true">·</span>
+                <a href="https://www.linkedin.com/in/andr%C3%A9s-lapuente-sola-604372277/" target="_blank" rel="noopener">LinkedIn</a>
+                <span aria-hidden="true">·</span>
+                <a href="https://github.com/AndresLapSol" target="_blank" rel="noopener">GitHub</a>
             </div>
         </div>
-        <!-- /LOOPING TEXT -->
 
-        <p data-es="Desarrollador Full-Stack Junior | QA Tester | Abierto a Oportunidades en Software y TI"
-           data-en="Junior Full-Stack Developer | QA Tester | Open to Software & IT Opportunities">
-            Desarrollador Full-Stack Junior | QA Tester | Abierto a Oportunidades en Software y TI
-        </p>
-        <a href="#projects" class="btn" data-es="Ver Proyectos" data-en="See Projects">Ver Proyectos</a>
+        <div class="hero-figure">
+            <img class="avatar" src="src/images/profile.jpg" alt="Andrés Lapuente Sola" loading="eager" />
+        </div>
     </div>
 </section>
 
 <!-- ABOUT -->
 <section id="about" class="about">
     <div class="container">
+        <p class="section-eyebrow">01</p>
         <h2 data-es="Sobre mí" data-en="About me">Sobre mí</h2>
+
         <div class="about-grid">
             <div class="about-text">
-                <p data-es="Soy Desarrollador Full-Stack Junior y QA Tester, apasionado por la tecnología y en constante aprendizaje. Estoy abierto a oportunidades en el ámbito de Software y TI, donde puedo aportar valor desarrollando soluciones eficientes y asegurando la calidad del software."
-                   data-en="I am a Junior Full-Stack Developer and QA Tester, passionate about technology and continuous learning. I am open to opportunities in Software and IT, where I can add value by building efficient solutions and ensuring software quality.">
-                    Soy Desarrollador Full-Stack Junior y QA Tester, apasionado por la tecnología y en constante aprendizaje. Estoy abierto a oportunidades en el ámbito de Software y TI, donde puedo aportar valor desarrollando soluciones eficientes y asegurando la calidad del software.
+                <p data-es="Estoy en plena transición hacia Data Analytics/Engineering. Curso la Especialización en Inteligencia Artificial y Big Data en el IES Gran Capitán (Córdoba), que finalizo en 2026, con el objetivo de trabajar analizando y construyendo sistemas de datos."
+                   data-en="I'm in the middle of a transition into Data Analytics/Engineering. I'm completing a Specialization in Artificial Intelligence &amp; Big Data at IES Gran Capitán (Córdoba), finishing in 2026, aiming to work analyzing and building data systems.">
+                    Estoy en plena transición hacia Data Analytics/Engineering. Curso la Especialización en Inteligencia Artificial y Big Data en el IES Gran Capitán (Córdoba), que finalizo en 2026, con el objetivo de trabajar analizando y construyendo sistemas de datos.
+                </p>
+                <p data-es="Vengo de un perfil de desarrollo backend: he trabajado como analista, diseñador de software y desarrollador full stack (PHP, Java, MySQL) en entornos de producción reales, incluido mi puesto actual en Azabache Ingeniería. Esa base de programación, arquitectura y bases de datos es justo lo que ahora aplico al mundo del dato."
+                   data-en="I come from a backend development background: I've worked as analyst, software designer and full-stack developer (PHP, Java, MySQL) in real production environments, including my current role at Azabache Ingeniería. That foundation in programming, architecture and databases is exactly what I now apply to the data world.">
+                    Vengo de un perfil de desarrollo backend: he trabajado como analista, diseñador de software y desarrollador full stack (PHP, Java, MySQL) en entornos de producción reales, incluido mi puesto actual en Azabache Ingeniería. Esa base de programación, arquitectura y bases de datos es justo lo que ahora aplico al mundo del dato.
+                </p>
+                <p data-es="Mi enfoque es concreto: aportar valor desde el primer día, aprender rápido y aplicar buenas prácticas en cada proyecto."
+                   data-en="My approach is concrete: add value from day one, learn fast and apply solid practices on every project.">
+                    Mi enfoque es concreto: aportar valor desde el primer día, aprender rápido y aplicar buenas prácticas en cada proyecto.
                 </p>
 
-                <p data-es="Durante mis prácticas de ciclo superior trabajé tanto en programación como en testing de aplicaciones, lo que me dio una visión completa del ciclo de desarrollo. Me motiva seguir creciendo, asumir retos y aportar dedicación al equipo."
-                   data-en="During my higher-education internship I worked both in programming and application testing, which gave me a complete view of the development cycle. I am motivated to keep growing, take on challenges, and bring dedication to the team.">
-                    Durante mis prácticas de ciclo superior trabajé tanto en programación como en testing de aplicaciones, lo que me dio una visión completa del ciclo de desarrollo. Me motiva seguir creciendo, asumir retos y aportar dedicación al equipo.
-                </p>
-
-                <div style="margin-top:1.2rem;">
-                    <a href="assets/CV_Andres_Lapuente_ES.pdf" download="CV_Andres_Lapuente_ES.pdf" class="btn small"
-                       data-es="Descargar CV en Español" data-en="Download CV in Spanish">Descargar CV en Español</a>
-                    <a href="assets/CV_Andres_Lapuente_EN.pdf" download="CV_Andres_Lapuente_EN.pdf" class="btn small"
-                       data-es="Descargar CV en Inglés" data-en="Download CV in English">Descargar CV en Inglés</a>
+                <div class="cv-links">
+                    <a href="assets/CV_Andres_Lapuente_ES.pdf?v=20260810" download="CV_Andres_Lapuente_ES.pdf" class="btn outline small"
+                       data-es="CV en Español" data-en="CV in Spanish">CV en Español</a>
+                    <a href="assets/CV_Andres_Lapuente_EN.pdf?v=20260810" download="CV_Andres_Lapuente_EN.pdf" class="btn outline small"
+                       data-es="CV en Inglés" data-en="CV in English">CV en Inglés</a>
                 </div>
             </div>
 
-            <div class="about-img">
-                <img src="src/images/foto2.jpg" alt="Avatar Andrés LapSol" />
+            <aside class="about-facts">
+                <div class="fact">
+                    <span class="fact-label" data-es="Ubicación" data-en="Location">Ubicación</span>
+                    <span class="fact-value" data-es="Córdoba, España" data-en="Córdoba, Spain">Córdoba, España</span>
+                </div>
+                <div class="fact">
+                    <span class="fact-label" data-es="Foco" data-en="Focus">Foco</span>
+                    <span class="fact-value" data-es="Data Analytics / Engineering" data-en="Data Analytics / Engineering">Data Analytics / Engineering</span>
+                </div>
+                <div class="fact">
+                    <span class="fact-label" data-es="Formación actual" data-en="Currently studying">Formación actual</span>
+                    <span class="fact-value" data-es="Especialización en IA &amp; Big Data (2026)" data-en="AI &amp; Big Data Specialization (2026)">Especialización en IA &amp; Big Data (2026)</span>
+                </div>
+                <div class="fact">
+                    <span class="fact-label" data-es="Background" data-en="Background">Background</span>
+                    <span class="fact-value" data-es="Desarrollo: PHP · Java · MySQL" data-en="Development: PHP · Java · MySQL">Desarrollo: PHP · Java · MySQL</span>
+                </div>
+                <div class="fact">
+                    <span class="fact-label" data-es="Idiomas" data-en="Languages">Idiomas</span>
+                    <span class="fact-value" data-es="Español (nativo) · Inglés (B1)" data-en="Spanish (native) · English (B1)">Español (nativo) · Inglés (B1)</span>
+                </div>
+            </aside>
+        </div>
+    </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience" class="experience">
+    <div class="container">
+        <p class="section-eyebrow">02</p>
+        <h2 data-es="Experiencia" data-en="Experience">Experiencia</h2>
+
+        <div class="timeline">
+            <!-- Azabache Ingeniería -->
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <div class="timeline-head">
+                        <h3 data-es="Analista y Diseñador SW/MM" data-en="Software Analyst &amp; Designer">Analista y Diseñador SW/MM</h3>
+                        <span class="timeline-date" data-es="Actual" data-en="Present">Actual</span>
+                    </div>
+                    <p class="timeline-org">Azabache Ingeniería</p>
+                    <ul>
+                        <li data-es="Diseño y optimización de software en Symfony, aplicando buenas prácticas de arquitectura y seguridad."
+                            data-en="Design and optimization of Symfony-based software, applying solid architecture and security practices.">
+                            Diseño y optimización de software en Symfony, aplicando buenas prácticas de arquitectura y seguridad.
+                        </li>
+                        <li data-es="Personalización y ajuste de sitios WordPress con Divi Builder, mejorando UX y responsividad."
+                            data-en="Customization of WordPress sites with Divi Builder, improving UX and responsiveness.">
+                            Personalización y ajuste de sitios WordPress con Divi Builder, mejorando UX y responsividad.
+                        </li>
+                        <li data-es="Gestión de repositorios en GitHub: control de versiones, ramas y colaboración en equipo."
+                            data-en="GitHub repository management: version control, branching and team collaboration.">
+                            Gestión de repositorios en GitHub: control de versiones, ramas y colaboración en equipo.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Filmijob -->
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <div class="timeline-head">
+                        <h3 data-es="Desarrollador Full Stack" data-en="Full Stack Developer">Desarrollador Full Stack</h3>
+                        <span class="timeline-date">2025</span>
+                    </div>
+                    <p class="timeline-org" data-es="Filmijob SL · En remoto" data-en="Filmijob SL · Remote">Filmijob SL · En remoto</p>
+                    <ul>
+                        <li data-es="Implementación segura de funcionalidades privadas para administradores del programa."
+                            data-en="Secure implementation of private features for program administrators.">
+                            Implementación segura de funcionalidades privadas para administradores del programa.
+                        </li>
+                        <li data-es="Desarrollo con PHP: Laravel, Yii 1.0 y Symfony, aplicando buenas prácticas."
+                            data-en="Development with PHP: Laravel, Yii 1.0 and Symfony, applying best practices.">
+                            Desarrollo con PHP: Laravel, Yii 1.0 y Symfony, aplicando buenas prácticas.
+                        </li>
+                        <li data-es="Desarrollo y validación de API con Postman, integrando servicios externos."
+                            data-en="API development and validation with Postman, integrating external services.">
+                            Desarrollo y validación de API con Postman, integrando servicios externos.
+                        </li>
+                        <li data-es="Ingeniería inversa de módulos críticos para analizar y mejorar su arquitectura."
+                            data-en="Reverse engineering of critical modules to analyze and improve their architecture.">
+                            Ingeniería inversa de módulos críticos para analizar y mejorar su arquitectura.
+                        </li>
+                        <li data-es="Administración de bases de datos con Adminer y depuración de rendimiento."
+                            data-en="Database administration with Adminer and performance debugging.">
+                            Administración de bases de datos con Adminer y depuración de rendimiento.
+                        </li>
+                        <li data-es="Redacción y optimización de prompts de IA para mejorar la calidad de las respuestas del producto."
+                            data-en="Writing and optimizing AI prompts to improve the product's response quality.">
+                            Redacción y optimización de prompts de IA para mejorar la calidad de las respuestas del producto.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Chiocciola Computer -->
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <div class="timeline-head">
+                        <h3 data-es="Técnico Informático" data-en="IT Technician">Técnico Informático</h3>
+                        <span class="timeline-date">2023</span>
+                    </div>
+                    <p class="timeline-org" data-es="Chiocciola Computer · Pescara, Italia" data-en="Chiocciola Computer · Pescara, Italy">Chiocciola Computer · Pescara, Italia</p>
+                    <ul>
+                        <li data-es="Prácticas internacionales de 3 meses: diagnóstico de hardware/software y atención al cliente en inglés e italiano."
+                            data-en="3-month international internship: hardware/software diagnostics and customer support in English and Italian.">
+                            Prácticas internacionales de 3 meses: diagnóstico de hardware/software y atención al cliente en inglés e italiano.
+                        </li>
+                        <li data-es="Formateo e instalación de sistemas operativos (Windows, Linux) y configuración de redes LAN."
+                            data-en="OS installation and formatting (Windows, Linux) and LAN network configuration.">
+                            Formateo e instalación de sistemas operativos (Windows, Linux) y configuración de redes LAN.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Education & certification -->
+        <div class="edu-cert-grid">
+            <div class="edu-block">
+                <h3 class="block-title" data-es="Formación" data-en="Education">Formación</h3>
+                <div class="edu-item">
+                    <div class="edu-item-head">
+                        <strong data-es="Curso de Especialización en Inteligencia Artificial y Big Data" data-en="Specialization Course in Artificial Intelligence &amp; Big Data">Curso de Especialización en Inteligencia Artificial y Big Data</strong>
+                        <span data-es="En curso · 2026" data-en="In progress · 2026">En curso · 2026</span>
+                    </div>
+                    <p>IES Gran Capitán, Córdoba</p>
+                </div>
+                <div class="edu-item">
+                    <div class="edu-item-head">
+                        <strong data-es="Grado Superior en Desarrollo de Aplicaciones Multiplataforma" data-en="Higher Degree in Multiplatform Application Development">Grado Superior en Desarrollo de Aplicaciones Multiplataforma</strong>
+                        <span>2023 – 2025</span>
+                    </div>
+                    <p>IES Antonio Gala</p>
+                </div>
+                <div class="edu-item">
+                    <div class="edu-item-head">
+                        <strong data-es="Grado Medio en Sistemas Microinformáticos y Redes" data-en="Vocational Degree in Microcomputer Systems and Networks">Grado Medio en Sistemas Microinformáticos y Redes</strong>
+                        <span>2021 – 2023</span>
+                    </div>
+                    <p>IES Antonio Gala</p>
+                </div>
+            </div>
+
+            <div class="edu-block">
+                <h3 class="block-title" data-es="Certificaciones" data-en="Certifications">Certificaciones</h3>
+                <div class="edu-item">
+                    <div class="edu-item-head">
+                        <strong data-es="Curso de Iniciación al Desarrollo con IA" data-en="Introduction to AI-Assisted Development">Curso de Iniciación al Desarrollo con IA</strong>
+                        <span>2025</span>
+                    </div>
+                    <p>BIG School</p>
+                </div>
+                <div class="edu-item">
+                    <div class="edu-item-head">
+                        <strong data-es="Inglés — Certificado B1" data-en="English — B1 Certificate">Inglés — Certificado B1</strong>
+                    </div>
+                    <p data-es="Nivel intermedio, uso profesional" data-en="Intermediate level, professional use">Nivel intermedio, uso profesional</p>
+                </div>
             </div>
         </div>
     </div>
 </section>
 
-<!-- TECH STACK -->
-<section id="tech" class="tech">
+<!-- SKILLS -->
+<section id="skills" class="skills">
     <div class="container">
-        <h2 data-es="Stack Tecnológico" data-en="Tech Stack">Stack Tecnológico</h2>
-        <div class="tech-grid" aria-hidden="false">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" />
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" />
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" />
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" />
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" />
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP" />
-            <!-- Laravel: si el CDN falla, onerror carga una versión local recomendada -->
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-plain.svg"
-                 alt="Laravel"
-                 onerror="this.onerror=null; this.src='src/images/laravel-plain.svg';" />
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" />
+        <p class="section-eyebrow">03</p>
+        <h2 data-es="Habilidades" data-en="Skills">Habilidades</h2>
+        <p class="section-subtitle"
+           data-es="Mi stack de desarrollo, ampliado con las herramientas de Big Data y analítica que uso en mis proyectos más recientes."
+           data-en="My development stack, expanded with the Big Data &amp; analytics tools I use in my most recent projects.">
+            Mi stack de desarrollo, ampliado con las herramientas de Big Data y analítica que uso en mis proyectos más recientes.
+        </p>
+
+        <div class="skills-grid">
+            <div class="skill-group">
+                <h3 data-es="Big Data &amp; Analítica" data-en="Big Data &amp; Analytics">Big Data &amp; Analítica</h3>
+                <div class="chips">
+                    <span class="chip">Apache Kafka</span>
+                    <span class="chip">Apache Spark</span>
+                    <span class="chip">Docker</span>
+                    <span class="chip">Grafana</span>
+                    <span class="chip">Power BI</span>
+                    <span class="chip">Streamlit</span>
+                    <span class="chip">Pandas</span>
+                    <span class="chip">Plotly</span>
+                </div>
+            </div>
+
+            <div class="skill-group">
+                <h3 data-es="Backend" data-en="Backend">Backend</h3>
+                <div class="chips">
+                    <span class="chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="" />PHP</span>
+                    <span class="chip">Laravel</span>
+                    <span class="chip">Symfony</span>
+                    <span class="chip">Yii</span>
+                    <span class="chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="" />Java</span>
+                    <span class="chip">Hibernate</span>
+                </div>
+            </div>
+
+            <div class="skill-group">
+                <h3 data-es="Frontend" data-en="Frontend">Frontend</h3>
+                <div class="chips">
+                    <span class="chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="" />HTML5</span>
+                    <span class="chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="" />CSS3</span>
+                    <span class="chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="" />JavaScript</span>
+                </div>
+            </div>
+
+            <div class="skill-group">
+                <h3 data-es="Datos" data-en="Data">Datos</h3>
+                <div class="chips">
+                    <span class="chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="" />MySQL</span>
+                    <span class="chip">Adminer</span>
+                    <span class="chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="" />Python</span>
+                </div>
+            </div>
+
+            <div class="skill-group">
+                <h3 data-es="Herramientas &amp; flujo de trabajo" data-en="Tools &amp; workflow">Herramientas &amp; flujo de trabajo</h3>
+                <div class="chips">
+                    <span class="chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="" />Git</span>
+                    <span class="chip">GitHub</span>
+                    <span class="chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-plain.svg" alt="" />Postman</span>
+                    <span class="chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-plain.svg" alt="" />WordPress · Divi</span>
+                    <span class="chip" data-es="Prompt engineering (IA)" data-en="Prompt engineering (AI)">Prompt engineering (IA)</span>
+                </div>
+            </div>
         </div>
     </div>
 </section>
 
-<!-- PROJECTS -->
-<section id="projects" class="projects">
+<!-- RECENT DATA PROJECTS -->
+<section id="projects" class="projects projects-recent">
     <div class="container">
-        <h2 data-es="Proyectos Destacados" data-en="Featured Projects">Proyectos Destacados</h2>
+        <p class="section-eyebrow">04</p>
+        <h2 data-es="Más recientes" data-en="Most recent">Más recientes</h2>
+        <p class="section-subtitle"
+           data-es="Proyectos del Curso de Especialización en IA y Big Data: pipelines de datos en tiempo real, análisis de sentimiento y dashboards."
+           data-en="Projects from the AI &amp; Big Data Specialization Course: real-time data pipelines, sentiment analysis and dashboards.">
+            Proyectos del Curso de Especialización en IA y Big Data: pipelines de datos en tiempo real, análisis de sentimiento y dashboards.
+        </p>
+
+        <div class="projects-grid data-projects-grid">
+            <!-- Crypto Pulse Risk -->
+            <div class="project-card data-project-card">
+                <div class="project-body">
+                    <h3>Crypto Pulse Risk</h3>
+                    <p data-es="Sistema experto para analizar el riesgo de criptomonedas con razonamiento explicable: cada veredicto detalla, paso a paso, las señales detectadas — sin caja negra. Extensión de navegador con procesamiento de whitepapers en PDF y OCR."
+                       data-en="Expert system for cryptocurrency risk analysis with explainable reasoning: every verdict documents, step by step, which signals were detected — no black box. Browser extension with PDF whitepaper processing and OCR.">
+                        Sistema experto para analizar el riesgo de criptomonedas con razonamiento explicable: cada veredicto detalla, paso a paso, las señales detectadas — sin caja negra. Extensión de navegador con procesamiento de whitepapers en PDF y OCR.
+                    </p>
+                    <div class="chips project-tags">
+                        <span class="chip">JavaScript</span>
+                        <span class="chip">PDF.js · OCR</span>
+                        <span class="chip" data-es="Extensión de navegador" data-en="Browser extension">Extensión de navegador</span>
+                        <span class="chip" data-es="Reglas explicables" data-en="Explainable rules">Reglas explicables</span>
+                    </div>
+                    <a href="https://github.com/AndresLapSol/crypto-pulse-risk" target="_blank" rel="noopener" class="project-link"
+                       data-es="Ver código →" data-en="View code →">Ver código →</a>
+                </div>
+            </div>
+
+            <!-- Dashboard Climático -->
+            <div class="project-card data-project-card">
+                <div class="project-body">
+                    <h3 data-es="Dashboard Climático" data-en="Weather Dashboard">Dashboard Climático</h3>
+                    <p data-es="Dashboard meteorológico interactivo con datos en tiempo real de 10 ciudades españolas: comparativas de temperatura, precipitación y viento, con auto-refresco y caché inteligente."
+                       data-en="Interactive weather dashboard with real-time data from 10 Spanish cities: temperature, precipitation and wind comparisons, with auto-refresh and smart caching.">
+                        Dashboard meteorológico interactivo con datos en tiempo real de 10 ciudades españolas: comparativas de temperatura, precipitación y viento, con auto-refresco y caché inteligente.
+                    </p>
+                    <div class="chips project-tags">
+                        <span class="chip">Python</span>
+                        <span class="chip">Streamlit</span>
+                        <span class="chip">Pandas</span>
+                        <span class="chip">Plotly</span>
+                        <span class="chip">Open-Meteo API</span>
+                    </div>
+                    <a href="https://github.com/AndresLapSol/dashboard_climatico" target="_blank" rel="noopener" class="project-link"
+                       data-es="Ver código →" data-en="View code →">Ver código →</a>
+                </div>
+            </div>
+
+            <!-- Crypto Signal Pipeline -->
+            <div class="project-card data-project-card">
+                <div class="project-body">
+                    <h3>Crypto Signal Pipeline</h3>
+                    <p data-es="Pipeline de Big Data en tiempo real que genera señales de trading (compra/venta/mantener) para 5 criptomonedas, combinando precios en vivo de Binance con análisis de sentimiento de noticias financieras."
+                       data-en="Real-time Big Data pipeline generating trading signals (buy/sell/hold) for five cryptocurrencies, combining live Binance price data with financial-news sentiment analysis.">
+                        Pipeline de Big Data en tiempo real que genera señales de trading (compra/venta/mantener) para 5 criptomonedas, combinando precios en vivo de Binance con análisis de sentimiento de noticias financieras.
+                    </p>
+                    <div class="chips project-tags">
+                        <span class="chip">Kafka</span>
+                        <span class="chip">Spark</span>
+                        <span class="chip">MySQL</span>
+                        <span class="chip">Docker</span>
+                        <span class="chip">Grafana</span>
+                        <span class="chip">Power BI</span>
+                    </div>
+                    <a href="https://github.com/AndresLapSol/crypto-signal-pipeline" target="_blank" rel="noopener" class="project-link"
+                       data-es="Ver código →" data-en="View code →">Ver código →</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- EARLIER PROJECTS -->
+<section id="projects-archive" class="projects">
+    <div class="container">
+        <p class="section-eyebrow">05</p>
+        <h2 data-es="Proyectos anteriores" data-en="Earlier projects">Proyectos anteriores</h2>
         <div class="projects-grid">
             <!-- Proyecto 1 -->
-            <div class="project-card" style="background-image:url('src/images/street_rps.png')">
-                <div class="card-content">
-                    <h3 data-es="Street Rps" data-en="Street Rps">Street Rps</h3>
-                    <p data-es="El clásico juego de piedra, papel y tijeras con un toque 'callejero'."
-                       data-en="The classic rock, paper, scissors game with a street twist.">
-                        El clásico juego de piedra, papel y tijeras con un toque 'callejero'.
+            <div class="project-card">
+                <div class="project-media" style="background-image:url('src/images/street_rps.png')"></div>
+                <div class="project-body">
+                    <h3>Street RPS</h3>
+                    <p data-es="El clásico piedra, papel y tijeras con un toque 'callejero'."
+                       data-en="The classic rock-paper-scissors game with a street twist.">
+                        El clásico piedra, papel y tijeras con un toque 'callejero'.
                     </p>
-                    <a href="https://github.com/AndresLapSol/Street_RPS" target="_blank" class="btn small"
-                       data-es="Código" data-en="Code">Código</a>
+                    <a href="https://github.com/AndresLapSol/Street_RPS" target="_blank" rel="noopener" class="project-link"
+                       data-es="Ver código →" data-en="View code →">Ver código →</a>
                 </div>
             </div>
 
             <!-- Proyecto 2 -->
-            <div class="project-card" style="background-image:url('src/images/hibernat_mysql.png')">
-                <div class="card-content">
-                    <h3 data-es="Hibernate + MySQL" data-en="Hibernate + MySQL">Hibernate + MySQL</h3>
-                    <p data-es="Integración de Hibernate con MySQL para persistencia en Java."
+            <div class="project-card">
+                <div class="project-media" style="background-image:url('src/images/hibernat_mysql.png')"></div>
+                <div class="project-body">
+                    <h3>Hibernate + MySQL</h3>
+                    <p data-es="Integración de Hibernate con MySQL para persistencia de datos en Java."
                        data-en="Hibernate integration with MySQL for data persistence in Java.">
-                        Integración de Hibernate con MySQL para persistencia en Java.
+                        Integración de Hibernate con MySQL para persistencia de datos en Java.
                     </p>
-                    <a href="https://github.com/AndresLapSol/proyect_hibernate_mysql" target="_blank" class="btn small"
-                       data-es="Código" data-en="Code">Código</a>
+                    <a href="https://github.com/AndresLapSol/proyect_hibernate_mysql" target="_blank" rel="noopener" class="project-link"
+                       data-es="Ver código →" data-en="View code →">Ver código →</a>
                 </div>
             </div>
 
             <!-- Proyecto 3 -->
-            <div class="project-card" style="background-image:url('src/images/library_project.png')">
-                <div class="card-content">
-                    <h3 data-es="Sistema Biblioteca" data-en="Library System">Sistema Biblioteca</h3>
+            <div class="project-card">
+                <div class="project-media" style="background-image:url('src/images/library_project.png')"></div>
+                <div class="project-body">
+                    <h3 data-es="Sistema de Biblioteca" data-en="Library System">Sistema de Biblioteca</h3>
                     <p data-es="Aplicación en Java para gestión de bibliotecas con CRUD completo."
                        data-en="Java application for library management with full CRUD.">
                         Aplicación en Java para gestión de bibliotecas con CRUD completo.
                     </p>
-                    <a href="https://github.com/AndresLapSol/proyectoBiblioteca" target="_blank" class="btn small"
-                       data-es="Código" data-en="Code">Código</a>
+                    <a href="https://github.com/AndresLapSol/proyectoBiblioteca" target="_blank" rel="noopener" class="project-link"
+                       data-es="Ver código →" data-en="View code →">Ver código →</a>
                 </div>
             </div>
 
             <!-- Proyecto 4 -->
-            <div class="project-card" style="background-image:url('src/images/arcade.png')">
-                <div class="card-content">
-                    <h3 data-es="Mobile Game" data-en="Mobile Game">Mobile Game</h3>
+            <div class="project-card">
+                <div class="project-media" style="background-image:url('src/images/arcade.png')"></div>
+                <div class="project-body">
+                    <h3 data-es="Juego móvil" data-en="Mobile game">Juego móvil</h3>
                     <p data-es="Juego móvil en Java: diseño de niveles y lógica de juego."
                        data-en="Mobile game in Java: level design and game logic.">
                         Juego móvil en Java: diseño de niveles y lógica de juego.
                     </p>
-                    <a href="https://github.com/AndresLapSol/mobileGame" target="_blank" class="btn small"
-                       data-es="Código" data-en="Code">Código</a>
+                    <a href="https://github.com/AndresLapSol/mobileGame" target="_blank" rel="noopener" class="project-link"
+                       data-es="Ver código →" data-en="View code →">Ver código →</a>
                 </div>
             </div>
         </div>
@@ -191,40 +505,41 @@
 <section id="contact" class="contact">
     <div class="container contact-grid">
         <div class="contact-info">
-            <h2 data-es="Contacto" data-en="Contact">Contacto</h2>
-            <p data-es="¿Interesado en colaborar o tienes alguna consulta? ¡Escríbeme!"
-               data-en="Interested in collaborating or have any questions? Feel free to write to me!">
-                ¿Interesado en colaborar o tienes alguna consulta? ¡Escríbeme!
+            <p class="section-eyebrow">06</p>
+            <h2 data-es="Hablemos" data-en="Let's talk">Hablemos</h2>
+            <p data-es="¿Tienes una oportunidad, un proyecto o simplemente quieres charlar sobre desarrollo? Escríbeme."
+               data-en="Have an opportunity, a project, or just want to talk about development? Write to me.">
+                ¿Tienes una oportunidad, un proyecto o simplemente quieres charlar sobre desarrollo? Escríbeme.
             </p>
             <ul>
-                <li><span data-es="Email:" data-en="Email:">Email:</span> <a href="mailto:andreslapsol@gmail.com">andreslapsol@gmail.com</a></li>
-                <li><span data-es="LinkedIn:" data-en="LinkedIn:">LinkedIn:</span> <a href="https://www.linkedin.com/in/andr%C3%A9s-lapuente-sola-604372277/" target="_blank">linkedin.com/in/andreslapsol</a></li>
+                <li><span data-es="Email" data-en="Email">Email</span><a href="mailto:andreslapsol@gmail.com">andreslapsol@gmail.com</a></li>
+                <li><span>LinkedIn</span><a href="https://www.linkedin.com/in/andr%C3%A9s-lapuente-sola-604372277/" target="_blank" rel="noopener">andrés-lapuente-sola</a></li>
+                <li><span>GitHub</span><a href="https://github.com/AndresLapSol" target="_blank" rel="noopener">AndresLapSol</a></li>
             </ul>
         </div>
 
         <form class="contact-form" action="https://formspree.io/f/xpwdwzbk" method="POST">
-            <input type="text" name="name" placeholder="Tu nombre" required
-                   data-es="Tu nombre" data-en="Your name" />
-            <input type="email" name="email" placeholder="Tu email" required
-                   data-es="Tu email" data-en="Your email" />
-            <textarea name="message" rows="5" placeholder="Tu mensaje" required
-                      data-es="Tu mensaje" data-en="Your message"></textarea>
-            <button type="submit" class="btn" data-es="Enviar" data-en="Send">Enviar</button>
+            <input type="text" name="name" required data-es="Tu nombre" data-en="Your name" placeholder="Tu nombre" />
+            <input type="email" name="email" required data-es="Tu email" data-en="Your email" placeholder="Tu email" />
+            <textarea name="message" rows="5" required data-es="Tu mensaje" data-en="Your message" placeholder="Tu mensaje"></textarea>
+            <button type="submit" class="btn primary" data-es="Enviar mensaje" data-en="Send message">Enviar mensaje</button>
         </form>
     </div>
 </section>
 
 <!-- FOOTER -->
 <footer class="footer">
-    <div class="container">
-        <p>
-            <span data-es="&copy; 2025 Andrés LapSol · " data-en="&copy; 2025 Andrés LapSol · ">&copy; 2026 Andrés LapSol · </span>
-            <a href="https://github.com/AndresLapSol" target="_blank">GitHub</a>
-        </p>
+    <div class="container footer-grid">
+        <p>&copy; 2026 Andrés Lapuente Sola</p>
+        <div class="footer-links">
+            <a href="https://github.com/AndresLapSol" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://www.linkedin.com/in/andr%C3%A9s-lapuente-sola-604372277/" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="mailto:andreslapsol@gmail.com">Email</a>
+        </div>
     </div>
 </footer>
 
-<!-- SCRIPTS: menu, idioma y loop (suave) -->
+<!-- SCRIPTS -->
 <script>
     /* ===== Mobile menu toggle ===== */
     const toggle = document.querySelector('.nav-toggle');
@@ -232,46 +547,37 @@
     if (toggle && links) {
         toggle.addEventListener('click', () => links.classList.toggle('nav-active'));
     }
+    links && links.querySelectorAll('a').forEach(a => a.addEventListener('click', () => links.classList.remove('nav-active')));
 
-    /* ===== setLanguage() central: actualiza texto en todo el DOM ===== */
+    /* ===== setLanguage(): actualiza texto en todo el DOM ===== */
     function setLanguage(lang) {
-        // título
+        document.documentElement.setAttribute('lang', lang);
+
         const titleEl = document.querySelector('title[data-es][data-en]');
         if (titleEl) titleEl.textContent = titleEl.getAttribute('data-' + lang);
 
-        // elementos con data-es/data-en
+        const metaDesc = document.querySelector('meta[name="description"][data-es][data-en]');
+        if (metaDesc) metaDesc.setAttribute('content', metaDesc.getAttribute('data-' + lang));
+
         document.querySelectorAll('[data-es][data-en]').forEach(el => {
             const text = el.getAttribute('data-' + lang);
             if (!text) return;
             const tag = el.tagName.toUpperCase();
-
-            // Inputs y textareas -> placeholder
             if (tag === 'INPUT' || tag === 'TEXTAREA') {
                 el.placeholder = text;
                 return;
             }
-
-            // Si el elemento es un .loop-item (creado por JS), preferimos mantener los atributos del propio elemento
-            if (el.classList && el.classList.contains('loop-item')) {
-                el.textContent = el.getAttribute('data-' + lang) || text;
-                return;
-            }
-
-            // Para elementos normales actualizamos el texto
+            if (tag === 'META' || tag === 'TITLE') return;
             el.textContent = text;
         });
-
-        // Asegurar que la "intro" del loop también cambie
-        const intro = document.querySelector('.text-loop .intro[data-es][data-en]');
-        if (intro) intro.textContent = intro.getAttribute('data-' + lang);
     }
 
-    /* ===== Language switcher visual: sincroniza con setLanguage() ===== */
-    (function(){
+    /* ===== Language switcher ===== */
+    (function () {
         const langSwitch = document.querySelector('.lang-switch');
-        if(!langSwitch) return;
+        if (!langSwitch) return;
 
-        const select = document.getElementById('language-switch'); // hidden native select
+        const select = document.getElementById('language-switch');
         const buttons = Array.from(langSwitch.querySelectorAll('.lang-btn'));
 
         function setActiveLang(lang, updateSelect = true) {
@@ -280,78 +586,18 @@
                 btn.classList.toggle('active', is);
                 btn.setAttribute('aria-selected', is ? 'true' : 'false');
             });
-            // apply page language
             setLanguage(lang);
             if (updateSelect && select) select.value = lang;
         }
 
-        // click handlers + keyboard navigation
         buttons.forEach(btn => {
             btn.addEventListener('click', () => setActiveLang(btn.dataset.lang));
-            btn.addEventListener('keydown', (e) => {
-                if(e.key === 'ArrowRight' || e.key === 'ArrowDown'){
-                    e.preventDefault();
-                    const next = buttons[(buttons.indexOf(btn) + 1) % buttons.length];
-                    next.focus();
-                } else if(e.key === 'ArrowLeft' || e.key === 'ArrowUp'){
-                    e.preventDefault();
-                    const prev = buttons[(buttons.indexOf(btn) - 1 + buttons.length) % buttons.length];
-                    prev.focus();
-                } else if(e.key === 'Enter' || e.key === ' '){
-                    e.preventDefault();
-                    btn.click();
-                }
-            });
         });
+        if (select) select.addEventListener('change', (e) => setActiveLang(e.target.value, false));
 
-        if (select) {
-            select.addEventListener('change', (e) => setActiveLang(e.target.value, false));
-        }
-
-        // Init: preferir 'es' o 'en' dependiendo de tu preferencia (aquí 'en' por defecto para demo)
-        const initial = (select && select.value) ? select.value : 'en';
+        const browserLang = (navigator.language || 'es').toLowerCase().startsWith('en') ? 'en' : 'es';
+        const initial = (select && select.value) ? select.value : browserLang;
         setActiveLang(initial, true);
-    })();
-
-    /* ===== Loop setup: wrap items, duplicate, compute height, touch pause ===== */
-    (function(){
-        const track = document.getElementById('loop-track');
-        const loop = document.querySelector('.loop');
-        if (!track || !loop) return;
-
-        // Wrap each span into .loop-item (preserve data attributes)
-        Array.from(track.querySelectorAll('span')).forEach(span => {
-            if (!span.classList.contains('loop-item')) {
-                const w = document.createElement('div');
-                w.className = 'loop-item';
-                Array.from(span.attributes).forEach(attr => w.setAttribute(attr.name, attr.value));
-                w.textContent = span.textContent;
-                span.replaceWith(w);
-            }
-        });
-
-        // Duplicate the content once to create continuous loop (0 -> -50%)
-        track.innerHTML = track.innerHTML + track.innerHTML;
-
-        // After a frame (to let fonts load) compute precise height and assign CSS var
-        requestAnimationFrame(() => {
-            const first = track.querySelector('.loop-item');
-            if (!first) return;
-            const ch = Math.ceil(first.getBoundingClientRect().height);
-            loop.style.setProperty('--item-h', ch + 'px');
-
-            // Optional: adjust speed based on number of unique items
-            // const uniqueCount = Math.max(1, track.querySelectorAll('.loop-item').length / 2);
-            // loop.style.setProperty('--speed', `${Math.max(3, uniqueCount * 1.4)}s`);
-        });
-
-        // Touch pause for mobile
-        loop.addEventListener('touchstart', () => {
-            track.style.animationPlayState = 'paused';
-        }, {passive: true});
-        loop.addEventListener('touchend', () => {
-            track.style.animationPlayState = 'running';
-        });
     })();
 </script>
 </body>
